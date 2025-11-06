@@ -1,5 +1,10 @@
-import 'package:wheater/wheater.dart' as wheater;
 
-void main(List<String> arguments) {
-  print("Hello world");
+import 'dart:io';
+import 'package:wheater/classLocation.dart';
+
+void main() async{
+  Location l = new Location("Roma");
+  await l.RecuperaCordinate();
+  print(l.getLatitudine);
+  print(l.getLongitudine);
 }
