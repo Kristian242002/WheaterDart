@@ -1,8 +1,7 @@
 import 'dart:convert';
-import 'dart:ffi';
 import 'package:http/http.dart' as http;
 
-class Location{
+class Location {
   // Attributi
   late double latitudine;
   late double longitudine;
@@ -12,25 +11,31 @@ class Location{
   Location(this.paese);
 
   //Metodi
-  Future<void> RecuperaCordinate() async { // Metodo che terminera in futuro utile per db,lettura da file etc.. 
-                                          //(Chiamate HTTP in questo caso)
-    final url = Uri.parse("https://nominatim.openstreetmap.org/search?q=$paese&format=json&limit=1");
-    try{
+  Future<void> RecuperaCordinate() async {
+    // Metodo che terminera in futuro utile per db,lettura da file etc..
+    //(Chiamate HTTP in questo caso)
+    final url = Uri.parse(
+      "https://nominatim.openstreetmap.org/search?q=$paese&format=json&limit=1",
+    );
+    try {
       // Uso dell'User Agent
-      final response = await http.get(url,headers: {"User-Agent" : "AppWheater:kristina@test.com"});
+      final response = await http.get(
+        url,
+        headers: {"User-Agent": "AppWheater:kristina@test.com"},
+      );
 
-      if(response.statusCode == 200){
+      if (response.statusCode == 200) {
         final data = jsonDecode(response.body);
-        if(data.isNotEmpty){
+        if (data.isNotEmpty) {
           latitudine = double.parse(data[0]['lat']);
           longitudine = double.parse(data[0]['lon']);
-        }else{
+        } else {
           print("$paese Non trovato riprovare");
         }
-      }else{
+      } else {
         print("Errore di tipo ${response.statusCode}");
       }
-    }catch(e){
+    } catch (e) {
       print("Errore di tipo $e");
     }
   }
