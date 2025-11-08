@@ -1,7 +1,3 @@
-**A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
-**# Weather CLI App – Progetto di prova in Dart
-
 Questo progetto è una **mini applicazione da riga di comando (CLI)** sviluppata in **Dart** con lo scopo di **testare le funzionalità del linguaggio**, in particolare:
 - la gestione asincrona (`async` / `await`),
 - le chiamate HTTP reali,
