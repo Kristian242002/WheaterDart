@@ -52,7 +52,7 @@ dart run
 Open Meteo : https://api.open-meteo.com/v1/forecast?latitude=<LAT>&longitude=<LON>&current_weather=true 
 Nomatim : https://nominatim.openstreetmap.org/search?q=<NOME_LOCALITA>&format=json&limit=1
 
-Entrambe mi generavano un JSON
+>Entrambe mi generavano un JSON
 ---
 ## Esempio di Output
 
