@@ -23,13 +23,15 @@ Questo progetto è una **mini applicazione da riga di comando (CLI)** sviluppata
 
 ## Struttura del progetto
 
+```text
 wheater/
 ├── lib/
-│ ├── classLocation.dart # Gestione delle coordinate e chiamata a Nominatim
-│ └── classWheater.dart # Gestione dei dati meteo e chiamata a Open-Meteo
+│   ├── classLocation.dart   # Gestione delle coordinate e chiamata a Nominatim
+│   └── classWheater.dart    # Gestione dei dati meteo e chiamata a Open-Meteo
 ├── bin/
-│ └── main.dart # Logica principale (interazione utente)
-├── pubspec.yaml # Gestione dipendenze (http)
+│   └── main.dart            # Logica principale (interazione utente)
+├── pubspec.yaml             # Gestione dipendenze (http)
+
 
 ---
 
