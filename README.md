@@ -49,13 +49,14 @@ dart run
 ---
 ## API usate
 
-Open Meteo : https://api.open-meteo.com/v1/forecast?latitude=<LAT>&longitude=<LON>&current_weather=true
+Open Meteo : https://api.open-meteo.com/v1/forecast?latitude=<LAT>&longitude=<LON>&current_weather=true 
 Nomatim : https://nominatim.openstreetmap.org/search?q=<NOME_LOCALITA>&format=json&limit=1
 
 Entrambe mi generavano un JSON
 ---
 ## Esempio di Output
 
+```text
 Inserisci il tuo nome: Verona
 --------------------------------
 A Verona
@@ -68,6 +69,7 @@ A una longitudine di : 10.9916
 A una latitudine di : 45.4384
 --------------------------------
 Digita X se vuoi uscire altrimenti digita un altro carattere:
+```
 
 
 
