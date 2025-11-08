@@ -32,7 +32,7 @@ wheater/
 │   └── main.dart            # Logica principale (interazione utente)
 ├── pubspec.yaml             # Gestione dipendenze (http)
 
-
+```
 ---
 
 ## Comandi principali
