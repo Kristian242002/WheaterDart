@@ -36,7 +36,7 @@ wheater/
 ---
 
 ## Comandi principali
-
+```text
 # Creazione di un nuovo progetto Dart
 dart create wheater
 
@@ -45,7 +45,7 @@ dart pub add http
 
 # Esecuzione del programma
 dart run
-
+```
 ---
 ## API usate
 
